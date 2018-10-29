@@ -1,0 +1,18 @@
+#!/bin/sh
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    12                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jaleman <jaleman@student.42.us.org>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/29 12:41:40 by jaleman           #+#    #+#              #
+#    Updated: 2018/10/29 12:41:40 by jaleman          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Check that the server with the 10.51.1.253 IP address is reachable from your
+# computer.
+
+ping -c 1 10.51.1.25 > /dev/null 2>&1 ;
+[ $? -eq 0 ] && echo "Reachable" || echo "idk lol"
