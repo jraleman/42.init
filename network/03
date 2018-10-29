@@ -1,0 +1,18 @@
+#!/bin/sh
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    03                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jaleman <jaleman@student.42.us.org>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/29 11:56:40 by jaleman           #+#    #+#              #
+#    Updated: 2018/10/29 11:56:41 by jaleman          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Identify the MAC address of the Wi-Fi card
+ifconfig en1 | grep "ether" | cut -d " " -f2
+
+# Lists a number of interfaces (WiFi, Bluetooth, Thunderbolt), all named en{X}.
+# networksetup -listallhardwareports
