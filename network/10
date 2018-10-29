@@ -1,0 +1,16 @@
+#!/bin/sh
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    10                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jaleman <jaleman@student.42.us.org>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/29 12:31:43 by jaleman           #+#    #+#              #
+#    Updated: 2018/10/29 12:31:43 by jaleman          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Identify the network devices between your computer and the slash16.org domain
+
+traceroute slash16.org
