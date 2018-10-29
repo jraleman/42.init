@@ -1,0 +1,15 @@
+#!/bin/sh
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    05                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jaleman <jaleman@student.42.us.org>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/29 12:12:28 by jaleman           #+#    #+#              #
+#    Updated: 2018/10/29 12:12:28 by jaleman          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Identify the IP address of the DNS that responds to slash16.org
+nslookup slash16.org | grep "Server" | cut -d ":" -f2 | tr -d "\t"
