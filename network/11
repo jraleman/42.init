@@ -1,0 +1,35 @@
+# 11
+
+*Use the output of the previous command to find the name and IP address of the
+device that makes the link between you (local network) and the outside world*
+
+## Deduction
+
+```
+traceroute: Warning: slash16.org has multiple addresses; using 143.204.132.231
+traceroute to slash16.org (143.204.132.231), 64 hops max, 52 byte packets
+ 1  10.114.254.254 (10.114.254.254)  0.667 ms  0.365 ms  0.277 ms
+ 2  192.168.0.2 (192.168.0.2)  0.385 ms  0.307 ms  0.313 ms
+ 3  nat (10.90.1.11)  0.172 ms  0.142 ms  0.170 ms
+ 4  64.62.224.30 (64.62.224.30)  0.835 ms  0.703 ms  0.710 ms
+ 5  64.62.224.253 (64.62.224.253)  3.403 ms  3.433 ms  3.505 ms
+ 6  64.62.224.249 (64.62.224.249)  3.897 ms  3.987 ms  3.631 ms
+ 7  v1851.core2.fmt2.he.net (216.218.200.77)  3.276 ms  3.545 ms  4.924 ms
+ 8  100ge14-1.core3.fmt2.he.net (184.105.65.177)  3.245 ms  3.216 ms  3.104 ms
+ 9  100ge14-2.core1.sjc2.he.net (72.52.92.246)  3.621 ms  3.546 ms  3.658 ms
+10  equinix01-sfo5.amazon.com (206.223.116.177)  3.804 ms  3.855 ms
+    equinix02-sfo5.amazon.com (206.223.116.236)  3.891 ms
+11  52.93.70.200 (52.93.70.200)  4.445 ms
+    52.93.70.204 (52.93.70.204)  4.238 ms
+    52.93.70.198 (52.93.70.198)  4.302 ms
+12  52.93.47.119 (52.93.47.119)  3.654 ms
+    52.93.47.125 (52.93.47.125)  5.838 ms  5.558 ms
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  server-143-204-132-231.sfo5.r.cloudfront.net (143.204.132.231)  3.623 ms  3.542 ms  3.691 ms
+```
+
+- `nat  (10.90.1.11)`
