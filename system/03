@@ -1,0 +1,9 @@
+# 03
+
+*What file has to be modified to make it permanent?*
+
+` > cat /etc/hostname`
+
+```
+kwame-fanclub
+```
