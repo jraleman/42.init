@@ -1,0 +1,19 @@
+#!/bin/sh
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    05                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jaleman <jaleman@student.42.us.org>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/29 22:05:14 by jaleman           #+#    #+#              #
+#    Updated: 2018/10/29 22:05:14 by jaleman          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Name the command that determines the state of the SSH service
+systemctl status ssh
+
+# Debuggin stuff
+#   sudo apt-get remove --purge openssh-server
+#   sudo apt-get install openssh-server
