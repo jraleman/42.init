@@ -1,0 +1,16 @@
+# 16
+
+*Make the 46.19.122.85 address reroute to intra.42.fr*
+
+## Deduction
+
+` > sudo echo -e "46.19.122.85\tintra.42.fr" >> /etc/hosts`
+
+```
+127.0.0.1       localhost
+255.255.255.255 broadcasthost
+::1             localhost
+
+#10.51.1.38 	cdn.intra.42.fr
+46.19.122.85  intra.42.fr
+```
