@@ -1,0 +1,9 @@
+# 08
+
+*What file contains the RSA keys that are authorized to connect via SSH?*
+
+## Deduction
+
+```
+ > cat ~/.ssh/authorized_keys
+```
