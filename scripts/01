@@ -1,0 +1,44 @@
+#!/bin/sh
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    01                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jaleman <jaleman@student.42.us.org>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/29 23:40:02 by jaleman           #+#    #+#              #
+#    Updated: 2018/10/29 23:40:02 by jaleman          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Vars...
+declare passwdOutput ;
+declare lineContent ;
+# declare fileName ;
+
+# declare firstColumn ;
+# declare secondColumn ;
+# declare thirdColumn ;
+
+# Write a script which displays only the login, UID and Path of each
+# entry of the /etc/passwd file.
+# echo "Login\tUID\tPath";
+# echo "---------------------------";
+passwdOutput="$(cat /etc/passwd | awk -F ':' '{print $1, $3, $6}')" ;
+# fileName="OUT.csv"
+
+echo "$passwdOutput"
+
+# echo "$passwdOutput" | while read line ;
+# do
+#   lineContent="$(echo $line)" ;
+#   echo $lineContent ;
+#   firstColumn=$(echo "$lineContent" | egrep -i 'Login:' | awk -F ' ' '{print $NF}') ;
+#   secondColumn=$(echo "$lineContent" | egrep -i 'UID' | awk -F ' ' '{print $NF}') ;
+#   thirdColumn=$(echo "$lineContent" | egrep -i 'PATH' | awk -F ' ' '{print $NF}') ;
+#   echo "$lineContent, $firstColumn, $secondColumn, $thirdColumn" >> ${fileName} ;
+# done
+#
+#
+# column -t -s ',' ${fileName}
+exit
