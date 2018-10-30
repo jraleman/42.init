@@ -1,0 +1,18 @@
+# 08
+
+*Are the returned IP addresses similar?*
+
+## Deduction
+
+- Yes, this is because the host id changes, but the network id stays the same.
+
+```
+Name:	slash16.org
+Address: 143.204.132.218
+Name:	slash16.org
+Address: 143.204.132.54
+Name:	slash16.org
+Address: 143.204.132.213
+Name:	slash16.org
+Address: 143.204.132.231
+```
