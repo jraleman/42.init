@@ -12,4 +12,4 @@
 # **************************************************************************** #
 
 # Run the ‘tail -f /var/log/syslog‘ command in background
-tail -f /var &
+tail -f /var/log/syslog &

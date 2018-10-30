@@ -2,6 +2,8 @@
 
 *What file has to be modified to make it permanent?*
 
+## Deduction
+
 ` > cat /etc/hostname`
 
 ```
