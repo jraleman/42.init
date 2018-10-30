@@ -1,0 +1,16 @@
+#!/bin/sh
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    18                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jaleman <jaleman@student.42.us.org>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/29 23:29:44 by jaleman           #+#    #+#              #
+#    Updated: 2018/10/29 23:29:44 by jaleman          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# With the previous command, authorize only IP addresses from 10.0.0.0/8
+# to connect to your system
+iptables -A INPUT -s 10.0.0.0/8 -j ACCEPT
