@@ -1,0 +1,27 @@
+#!/bin/sh
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    03                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jaleman <jaleman@student.42.us.org>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/30 06:26:17 by jaleman           #+#    #+#              #
+#    Updated: 2018/10/30 06:26:18 by jaleman          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+declare scriptName ;
+declare listOutput ;
+
+scriptName=$0
+if [ "$#" -gt 0 ] ; then
+  listOutput=$(ls -S $1) ;
+  printf '%s\n' "$listOutput" ;
+else
+  # ./ + ${scriptName#*/} -> remove ./ if included as param
+  # We are printing it before it anyways lol
+  echo "usage: ./${scriptName#*/} <path-to-directory>" ;
+fi
+
+exit ;
