@@ -1,0 +1,25 @@
+#!/bin/sh
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    05                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jaleman <jaleman@student.42.us.org>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/30 06:27:00 by jaleman           #+#    #+#              #
+#    Updated: 2018/10/30 06:27:01 by jaleman          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+declare displayFile ;
+
+displayFile="../resources/out.html" ;
+
+if [ ! -f $displayFile ] ; then
+  # File not found, print 42 as a fail back
+  echo "42" ;
+else
+  open $displayFile ;
+fi
+
+exit ;
