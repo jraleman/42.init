@@ -1,0 +1,11 @@
+# 13
+
+*Figure out the server type*
+
+## Deduction
+
+` > open /System/Library/PreferencePanes/Network.prefPane/`
+
+```
+Configure IPv4: Using DHCP
+```
