@@ -1,0 +1,32 @@
+#!/bin/bash
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    04                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jaleman <jaleman@student.42.us.org>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/30 06:26:31 by jaleman           #+#    #+#              #
+#    Updated: 2018/10/30 06:26:32 by jaleman          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+declare checksum ;
+declare oldChecksum ;
+
+oldChecksum="old.md5sum" ;
+checksum=$(md5sum /etc/crontab | awk '{ print $1 }') ;
+
+# echo "0 0 * * * $(pwd)/./04 >> /etc/crontab" ;
+
+read -r line < $oldChecksum ;
+
+if [ "$line" != "$checksum" ] ; then
+  echo "$checksum" | mail -s "Crontab has been modified!" root ;
+else
+  echo "No changes found." ;
+fi
+
+echo "$checksum" > "$oldChecksum" ;
+
+exit ;
