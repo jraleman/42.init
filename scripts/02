@@ -1,0 +1,31 @@
+#!/bin/bash
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    02                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jaleman <jaleman@student.42.us.org>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/30 06:26:23 by jaleman           #+#    #+#              #
+#    Updated: 2018/10/30 06:26:24 by jaleman          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+declare updatePackages ;
+declare logPath ;
+declare cronPath ;
+declare cronTime ;
+declare cronTask ;
+
+if [[ $EUID -ne 0 ]]; then
+  echo "This script must be executed as root!" ;
+  exit ;
+fi
+
+updatePackages="apt-get update -y && apt-get upgrade" ;
+logPath="/var/log/update_script.log" ;
+cronPath="/var/spool/cron/crontabs/root" ;
+cronTime="* 4 * * 0" ;
+cronTask="$cronTime $updatePackages >> $logPath" ;
+
+echo "$cronTask" >> $cronPath ;
