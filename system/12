@@ -13,4 +13,4 @@
 
 # Figure out the exact size of each folder of /var
 
-du /var
+du -ha --max-depth=1 /var/

@@ -5,4 +5,8 @@ following a regular schedule*
 
 ## Deduction
 
+The service to schedule tasks is `cron`.
+This package is installed as part of the base system,
+and will be running by default :)
+
 ` > cron`

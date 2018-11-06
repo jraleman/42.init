@@ -4,6 +4,53 @@
 
 ## Deduction
 
+This file would be `~/.ssh/authorized_keys`.
+This is under the home directory of the user.
+We can try running the following command:
+
+` > cat ~/.ssh/authorized_keys`
+
+This gives us the following output:
+
 ```
- > cat ~/.ssh/authorized_keys
+                               yMMMMMMMMMMMMMMMMMMMMM/
+                            :++ossssssssssssssssssssso++-
+                            dMM/                     yMMo
+                         hdd/--`  +dddddy  `dddddd.  .--oddo
+                         NMM-  .::ohhmMMm:::hhhMMM+::`  oMMy
+                         NMM-  yMMo  /MMMMMN   NMMMMM/  oMMy
+                      yyy///`  yMMo  /MMMMMN   NMMMMM/  -//oyyo
+         `..`        `MMM`     smmo..+MMMmmd...NMMNmm:     /MMh      ...
+         sNNo        `MMM`     ```oNNNMMd``.NNNMMM:``      /MMh      NNN.
+      /++osso++++++++oMMM`        :sssss+  `ssssss`        /MMm++++++ssso++.
+      hMM+  +MMMMMMMMMMMM`                                 /MMMMMMMMM   mMM:
+   hmm/..`  `............            :mmmmmd               /MMd......   ...ymm/
+   yhh+::.  .:::::::::               /MMMMMN            .::sMMd::::::   -::shh:
+      hMM+  +MMMMMMMMN               /MMMMMN            oMMMMMMMMMMMM   mMM:
+      -::ohho::::::::/hhh`           .::::::            oMMh:::::::::yhh/::`
+         omm+        `MMM`                           ...ommo         dmm.
+         ````        `MMM`                           yNNo```         ```
+                      oooooo.                        yMMo
+                         NMM-                     ```yNN+
+                         NMM-                     ymm/..`
+                         yhh+::.               :::yhh-
+                            dMM/               NMM-
+                            dMM/               NMM-
+                            dMM/               NMM-
+                            dMM/               NMM-
+                            dMM/           `sss+++`
+                            dMM/         ``.NNN`
+                            dMM/        -mmd...
+                            dMM/     .//+yys
+                            hMM/     /MMd
+                         yhh/::`  /hhs::-
+                      ---NMM/-----oddo
+                     `MMMMMMMMMMMMo
+                      ++++++++++++-
+
+
+...it's a mystery
+
 ```
+
+I am not going to post my keys online ;)

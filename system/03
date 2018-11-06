@@ -4,7 +4,16 @@
 
 ## Deduction
 
+We will need to modify the file `/etc/hostname` to make this permanent.
+It can be done running the following command:
+
+` > sudo echo "kwame-fanclub" > /etc/hostname`
+
+And we can check this with the following command:
+
 ` > cat /etc/hostname`
+
+This will give us the following output:
 
 ```
 kwame-fanclub

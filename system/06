@@ -12,4 +12,9 @@
 # **************************************************************************** #
 
 # Name the command that reboots it
+
 systemctl restart ssh
+
+# Alternative commands
+#   /etc/init.d/ssh restart
+#   service ssh --full-restart

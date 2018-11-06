@@ -2,7 +2,15 @@
 
 *In what file can you find the installed version of your Debian?*
 
+## Deduction
+
+This file would be `/etc/debian_version`.
+We can try running the following command:
+
 `> cat /etc/debian_version`
+
+This gives us the following output:
+
 ```
 9.5
 ```

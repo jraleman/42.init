@@ -12,7 +12,12 @@
 # **************************************************************************** #
 
 # Name the command that determines the state of the SSH service
+
 systemctl status ssh
+
+# Alternative commands
+#   /etc/init.d/ssh status
+#   service ssh status
 
 # Debuggin stuff
 #   sudo apt-get remove --purge openssh-server

@@ -12,4 +12,8 @@
 # **************************************************************************** #
 
 # Name the command that lists the partition tables of external devices
+
 fdisk -l
+
+# For some reason, a regular user isn't able to run fdisk alone, but using
+# the absolute path of the binary `/sbin/fdisk -l` works fine. lol
