@@ -15,4 +15,4 @@
 # computer.
 
 ping -c 1 10.51.1.25 > /dev/null 2>&1 ;
-[ $? -eq 0 ] && echo "Reachable" || echo "idk lol"
+[ $? -eq 0 ] && echo "Reachable" || echo "Unreachable"

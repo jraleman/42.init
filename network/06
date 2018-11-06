@@ -5,7 +5,12 @@ DNS server you’re using*
 
 ## Deduction
 
+The path to the file that contains the dns server is `/etc/resolv.conf`.
+We can test this running the following command:
+
 ` > cat /etc/resolv.conf`
+
+That gives us the following output:
 
 ```
 #

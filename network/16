@@ -4,7 +4,17 @@
 
 ## Deduction
 
+This can be done by adding a new entry to the `/etc/hosts`.
+To do this, we need to define the IP and the domain in the entry.
+The first column contains the IP address and the second column contains the url.
+
 ` > sudo echo -e "46.19.122.85\tintra.42.fr" >> /etc/hosts`
+
+And we can verify this by catting the file:
+
+` > cat /etc/hosts`
+
+Which should give us the following output:
 
 ```
 127.0.0.1       localhost

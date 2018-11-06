@@ -12,4 +12,5 @@
 # **************************************************************************** #
 
 # Identifiy the default gateway in the routing table
-route get default | grep "gateway" | cut -d ":" -f2 | tr -d " "
+
+route -n get default | grep "gateway" | cut -d " " -f5-

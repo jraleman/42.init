@@ -4,7 +4,8 @@
 
 ## Deduction
 
-- Yes, this is because the host id changes, but the network id stays the same.
+Yes, this is because the host id changes, but the network id stays the same.
+We can see it from the following output:
 
 ```
 Name:	slash16.org

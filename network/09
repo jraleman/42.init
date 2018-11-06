@@ -4,7 +4,8 @@
 
 ## Deduction
 
-- Host id seems to be going in ascending order.
+Host id seems to be going in ascending order.
+We can see it from the following output:
 
 ```
 Name:	42.fr

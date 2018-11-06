@@ -12,4 +12,5 @@
 # **************************************************************************** #
 
 # Identify the IP address of the DNS that responds to slash16.org
+
 nslookup slash16.org | grep "Server" | cut -d ":" -f2 | tr -d "\t"

@@ -4,7 +4,12 @@
 
 ## Deduction
 
+The file that contains the local DNS entries is in `/etc/hosts`.
+We can try running the following command:
+
 ` > cat /etc/hosts`
+
+This gives us the following output:
 
 ```
 127.0.0.1       localhost

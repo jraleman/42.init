@@ -12,7 +12,9 @@
 # **************************************************************************** #
 
 # Identify the MAC address of the Wi-Fi card
+
 ifconfig en1 | grep "ether" | cut -d " " -f2
 
 # Lists a number of interfaces (WiFi, Bluetooth, Thunderbolt), all named en{X}.
+
 # networksetup -listallhardwareports

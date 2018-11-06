@@ -4,6 +4,9 @@
 
 ## Deduction
 
+Running the following command, you can determinate if the server is a DHCP
+(Dynamic Host Configuration Protocol) or not.
+
 ` > open /System/Library/PreferencePanes/Network.prefPane/`
 
 ```

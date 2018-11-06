@@ -12,4 +12,5 @@
 # **************************************************************************** #
 
 # Identify the IP address of the Ethernet interface
+
 ipconfig getifaddr en0

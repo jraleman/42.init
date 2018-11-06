@@ -5,6 +5,16 @@ device that makes the link between you (local network) and the outside world*
 
 ## Deduction
 
+When running traceroute the first two devices are the local devices while
+the third one is label as:
+
+- `nat  (10.90.1.11)`
+
+`NAT` stands for "Network Address Translation."
+NAT translates the IP addresses of computers in a local network to a single
+IP address, which is often used by the router that connects the computers
+to the Internet
+
 ```
 traceroute: Warning: slash16.org has multiple addresses; using 143.204.132.231
 traceroute to slash16.org (143.204.132.231), 64 hops max, 52 byte packets
@@ -31,5 +41,3 @@ traceroute to slash16.org (143.204.132.231), 64 hops max, 52 byte packets
 17  * * *
 18  server-143-204-132-231.sfo5.r.cloudfront.net (143.204.132.231)  3.623 ms  3.542 ms  3.691 ms
 ```
-
-- `nat  (10.90.1.11)`
