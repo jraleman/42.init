@@ -14,7 +14,7 @@
 declare scriptName ;
 declare listOutput ;
 
-scriptName=$0
+scriptName=$0 ;
 if [ "$#" -gt 0 ] ; then
   listOutput=$(ls -S $1) ;
   printf '%s\n' "$listOutput" ;

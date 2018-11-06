@@ -12,7 +12,7 @@
 # **************************************************************************** #
 
 declare passwdOutput ;
-declare lineContent ;
+# declare lineContent ;
 # declare fileName ;
 
 # declare firstColumn ;
